@@ -1,0 +1,12 @@
+output/*.aux
+output/*.log
+output/*.nav
+output/*.out
+output/*.snm
+output/*.toc
+output/*.vrb
+output/*.pdf
+
+.*.swp
+*~
+
