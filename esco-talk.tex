@@ -49,25 +49,15 @@
     \framesubtitle{}
 
     \begin{itemize}
-        %\item A few words about the speaker
-        \item Classical user interfaces
+        \item Background on user interfaces (UIs)
+        \pause
+        \item Online interactive web notebooks
+        \pause
+        \item FEMhub Online Lab
         \pause
         \item Future plans
     \end{itemize}
 \end{frame}
-
-%\begin{frame}
-%    \frametitle{A few words about the speaker}
-%    \framesubtitle{}
-%
-%    \begin{center}
-%        \includegraphics[scale=0.5]{images/sympy-unicode.png} % XXX
-%    \end{center}
-%
-%    \begin{itemize}
-%        \item on Friday graduated from Wrocław University of Technology
-%    \end{itemize}
-%\end{frame}
 
 \begin{frame}
     \frametitle{Classical approaches to interactive UIs}
@@ -76,14 +66,21 @@
     \begin{itemize}
         \item \structure{terminal based} user interfaces
             \begin{itemize}
+                \pause
                 \item single flow of inputs and outputs
+                \pause
                 \item not easy to return to previous results
+                \pause
                 \item primitive windowing possible via \texttt{curses} library
+                \pause
                 \item often people consider black screen as something wrong
             \end{itemize}
+        \pause
         \item \structure{graphical} user interfaces
             \begin{itemize}
+                \pause
                 \item take advantage of \structure{graphical toolkits}: Wx, GTK, Qt, \ldots
+                \pause
                 \item much more \structure{user friendly} than terminal based UIs
             \end{itemize}
     \end{itemize}
@@ -226,7 +223,7 @@
     An \structure{interactive} online \structure{notebook}:
     \begin{itemize}
         \pause
-        \item implements multiple--level architecture
+        \item implements multiple--level structure
             \begin{itemize}
                 \pause
                 \item user web interface
@@ -278,20 +275,20 @@
                 \pause
                 \item not easy to show to different worksheets at once
             \end{itemize}
+        %\pause
+        %\item not easy to work with multiple worksheets in parallel
+        %    \begin{itemize}
+        %        \pause
+        %        \item have to use multiple browser windows (or tabs)
+        %    \end{itemize}
         \pause
-        \item not easy to work with multiple worksheets in parallel
-            \begin{itemize}
-                \pause
-                \item have to use multiple browser windows (or tabs)
-            \end{itemize}
-        \pause
-        \item notebook UIs not embeddable in third--party web sites
+        \item notebook UIs \structure{not embeddable} in third--party web sites
             \begin{itemize}
                 \pause
                 \item no way to use a notebook embedded in your web site
             \end{itemize}
         \pause
-        \item no well defined APIs for developers
+        \item \structure{no well defined APIs} for developers
             \begin{itemize}
                 \pause
                 \item not easy to replace a part of existing notebook
@@ -341,14 +338,8 @@
         \item uses \structure{Codenode} for code evaluation and data storage
         \pause
         \item uses \structure{ExtJS} for providing dektop--like user interface
-    \end{itemize}
-    \pause
-    FEMhub Online Lab:
-    \begin{itemize}
         \pause
         \item was \structure{originally} based on Sage Notebook
-        \pause
-        \item is on early stage of development
         \pause
         \item uses \structure{component} based desing
             \begin{itemize}
@@ -369,29 +360,30 @@
     \end{center}
 \end{frame}
 
-%\begin{frame}
-%    \frametitle{What are the missing features?}
-%    \framesubtitle{}
-%
-%    \begin{itemize}
-%        \item 3D visualisations
-%            \pause
-%            \begin{itemize}
-%                \item can be emulated with \structure{software rendering}
-%                \item \structure{preliminary support} in Firefox (canvas)
-%            \end{itemize}
-%        \item
-%    \end{itemize}
-%\end{frame}
+\begin{frame}
+    \frametitle{Future plans}
+    \framesubtitle{}
 
-%\begin{frame}
-%    \frametitle{Future plans}
-%    \framesubtitle{}
-%
-%    \begin{itemize}
-%        \item the ultimate goal is to port programs like Agros2D to the web
-%    \end{itemize}
-%\end{frame}
+    There is a very long \structure{TODO} list, but:
+    \begin{itemize}
+        \pause
+        \item the ultimate goal it to run programs like \structure{Agros2D} in a web browser
+            \begin{itemize}
+                \pause
+                \item we may need to develop a scientific \structure{toolkit for the web}
+                \pause
+                \item a toolkit similar to Enthought \texttt{traits}
+            \end{itemize}
+        \pause
+        \item currently we use \structure{JavaScript} for Online Lab's desktop
+            \begin{itemize}
+                \pause
+                \item this is fine on the initial stage of development
+                \pause
+                \item in future we may use \structure{Python}, via \texttt{py2js} program
+            \end{itemize}
+    \end{itemize}
+\end{frame}
 
 \begin{frame}[plain]
     \begin{center}
